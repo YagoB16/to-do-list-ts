@@ -1,9 +1,11 @@
+import styles from './Header.module.css';
+import rocketLogo from '../assets/rocket.svg'
 export function Header(){
     return (
         <>
-            <header>
-                <img src="" alt="" />
-                <strong>To Do List</strong>
+            <header className={styles.header}>
+                <img src={rocketLogo} alt="" />
+                <strong>TODO</strong>
             </header>
         </>
     )
