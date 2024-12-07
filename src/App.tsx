@@ -5,7 +5,7 @@ export function App() {
     return (
         <>
             <Header />
-            <div className=' max-w-6xl -mt-6 flex justify-center items-center gap-2'>
+            <div className=' -mt-6 flex justify-center items-center gap-2'>
                 <Input />
                 <Button />
             </div>
