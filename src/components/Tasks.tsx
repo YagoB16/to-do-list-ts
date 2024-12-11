@@ -3,7 +3,7 @@ export function Tasks() {
 
     return (
         <>
-            <div className='w-2/4 flex flex-col items-center gap-4'>
+            <div className='w-2/4 pt-5 flex flex-col items-center gap-4'>
                 <div className="w-92p flex gap-2 items-center">
                     <div className="px-1 py- w-full rounded-lg text-sm flex items-center justify-between gap-1">
                         <div className="text-sm p-1 flex gap-2 items-center font-bold text-[#4EA8DE]">
@@ -19,7 +19,7 @@ export function Tasks() {
                     </div>
                 </div>
                 <div className="bg-white border-t-2 border-black rounded-md w-92p">
-                   
+
                 </div>
             </div>
         </>
