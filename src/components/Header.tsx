@@ -5,7 +5,7 @@ export function Header() {
     return (
         <>
             <header className='flex justify-center items-center
-             h-52 py-5 bg-[#0D0D0D]'>
+             h-48 py-1 bg-[#0D0D0D]'>
                 <img src={rocketLogo} alt="" className='h-8 px-3' />
                 <strong className='text-3xl font-bold'>
                     <span className="text-[#4EA8DE]">TO</span>
