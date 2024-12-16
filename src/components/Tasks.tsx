@@ -1,4 +1,5 @@
-import Clipboard from "../assets/Clipboard.svg"
+import Clipboard from "../assets/Clipboard.svg";
+import { List } from "./List";
 
 export function Tasks() {
     const today = new Date();
@@ -28,6 +29,8 @@ export function Tasks() {
                         <p className="text-inter">Crie uma tarefa para hoje {today.toLocaleDateString()}</p>
                     </div>
                 </div>
+                <List />
+
             </div>
         </>
 
