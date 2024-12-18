@@ -9,6 +9,7 @@ module.exports = {
         extend: {
             width: {
                 '92p': '92%',
+                '50p': '50%',
             },
             fontFamily: {
                 inter: ['Inter', 'sans-serif'],

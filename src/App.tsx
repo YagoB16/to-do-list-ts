@@ -7,7 +7,7 @@ export function App() {
     return (
         <>
             <Header />
-            <div className='-mt-6 flex justify-center items-center gap-2'>
+            <div className='max-w-6xl w-50p -mt-8 grid grid-cols-[2fr_100px] gap-3 items-start mx-auto'>
                 <Input />
                 <Button />
             </div>
