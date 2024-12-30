@@ -3,6 +3,7 @@ import { List } from "./List";
 
 export function Tasks() {
     const today = new Date();
+    const hasTasks = true;
     return (
         <>
             <div className='w-2/4 pt-16 flex flex-col items-center gap-4'>
@@ -21,16 +22,18 @@ export function Tasks() {
                     </div>
                 </div>
                 <div className="w-92p flex flex-col items-center gap-4 rounded-lg bg-transparent border-t-2 border-[#80808048]  ">
-                    <div className="pt-14">
-                        <img src={Clipboard} alt="" />
-                    </div>
-                    <div className="text-center text-[#808080]">
-                        <p className="text-inter-bold">Você ainda não adicionou uma tarefa</p>
-                        <p className="text-inter">Crie uma tarefa para hoje {today.toLocaleDateString()}</p>
-                    </div>
+                    {hasTasks ? (
+                        <>
+                            <div className="pt-14">
+                                <img src={Clipboard} alt="" />
+                            </div>
+                            <div className="text-center text-[#808080]">
+                                <p className="text-inter-bold">Você ainda não adicionou uma tarefa</p>
+                                <p className="text-inter">Crie uma tarefa para hoje {today.toLocaleDateString()}</p>
+                            </div>
+                        </>) :
+                        <List />}
                 </div>
-                <List />
-
             </div>
         </>
 
