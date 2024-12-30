@@ -1,7 +1,7 @@
-import { List } from './List'
+import Clipboard from "../assets/Clipboard.svg";
+import { List } from "./List";
 
-
-export function Tasks({ tasks }: { tasks: string[] }) {
+export function Tasks() {
     const today = new Date();
     const hasTasks = true;
     return (
@@ -32,13 +32,10 @@ export function Tasks({ tasks }: { tasks: string[] }) {
                                 <p className="text-inter">Crie uma tarefa para hoje {today.toLocaleDateString()}</p>
                             </div>
                         </>) :
-                        <>
-                            {tasks.map((task) => {
-                                return <List />
-                            })}
-                        </>}
+                        <List />}
                 </div>
             </div>
         </>
+
     )
 }
