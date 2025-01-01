@@ -1,9 +1,11 @@
 import { Trash } from 'phosphor-react';
 
+export interface Tasks {
+    task: string | string[],
+}
 
 
-
-export function List() {
+export function List({task}: Tasks) {
 
 
     return (
@@ -12,7 +14,7 @@ export function List() {
                 <div className='w-6 h-6 -mt-4 ml-4 '>
                     <input className=" " type="checkbox" name="" id="" />
                 </div>
-                <p className="pl-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercita Los polos hermanos</p>
+                <p className="pl-2">{task}</p>
                 <button title='Deletar task' className='w-6 h-6 -mt-4 pr-4 pb-8'>
                     <Trash size={24}
                         className="text-gray-500 hover:[color:red]" />
