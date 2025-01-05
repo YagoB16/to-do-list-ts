@@ -7,8 +7,7 @@ import { Tasks } from './components/Tasks'
 export function App() {
 
     const [tasks, setTasks] = useState<string[]>([
-        'Teste',
-        'ola'
+
     ])
     // Função para adicionar uma nova tarefa
     function handleCreateNewTask(newTask: string) {
@@ -17,10 +16,10 @@ export function App() {
     return (
         <>
             <Header />
-            <div className='max-w-6xl w-50p -mt-8  items-start mx-auto'>
-                <Input onCreateNewTask={handleCreateNewTask}/>
+            <div className={`max-w-6xl w-50p -mt-8 items-start mx-auto`}>
+                <Input onCreateNewTask={handleCreateNewTask} />
             </div>
-            <main className='flex justify-center items-center'>
+            <main className={`flex justify-center items-center`}>
                 <Tasks tasks={tasks} />
             </main>
         </>

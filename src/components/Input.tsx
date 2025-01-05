@@ -25,7 +25,7 @@ export function Input({ onCreateNewTask }: InputProps) {
                 <input
                     type="text"
                     name="task"
-                    className="bg-[#262626] w-full border-transparent outline-none focus:ring-0 text-gray-300 text-sm rounded-lg p-4"
+                    className={`bg-[#262626] w-full border-transparent outline-none focus:ring-0 text-gray-300 text-sm rounded-lg p-4`}
                     placeholder="Adicione uma nova tarefa"
                     value={newTaskText}
                     onChange={handleNewTaskChange}
@@ -33,7 +33,7 @@ export function Input({ onCreateNewTask }: InputProps) {
 
                 <button
                     type="submit"
-                    className="bg-[#1E6F9F] hover:bg-[#4EA8DE] h-12 text-[#F2F2F2] rounded-lg p-2  flex items-center gap-2">
+                    className={`bg-[#1E6F9F] hover:bg-[#4EA8DE] h-12 text-[#F2F2F2] rounded-lg p-2  flex items-center gap-2`}>
                     Criar
                     <CgAdd
                         size={20}
