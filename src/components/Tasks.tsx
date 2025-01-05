@@ -1,16 +1,14 @@
-import { useState } from "react";
 import Clipboard from "../assets/Clipboard.svg";
+import { EmptyCell } from "./EmptyCell";
 import { List } from "./List";
 
+interface TasksProps {
+    tasks: string[];
+}
 
-export function Tasks() {
+export function Tasks({ tasks }: TasksProps) {
     const today = new Date();
     const hasTasks = true;
-
-    const [tasks, setTasks] = useState<string[]>([
-        'Teste',
-        'ola'
-    ])
     return (
         <>
             <div className='w-2/4 pt-16 flex flex-col items-center gap-4'>
@@ -30,15 +28,7 @@ export function Tasks() {
                 </div>
                 <div className="w-92p flex flex-col items-center gap-4 rounded-lg bg-transparent border-t-2 border-[#80808048]  ">
                     {!hasTasks ? (
-                        <>
-                            <div className="pt-14">
-                                <img src={Clipboard} alt="" />
-                            </div>
-                            <div className="text-center text-[#808080]">
-                                <p className="text-inter-bold">Você ainda não adicionou uma tarefa</p>
-                                <p className="text-inter">Crie uma tarefa para hoje {today.toLocaleDateString()}</p>
-                            </div>
-                        </>) : (
+                        <EmptyCell />) : (
                         tasks.map((task, index) => (
                             <List
                                 key={index}
