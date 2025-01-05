@@ -1,7 +1,7 @@
 import { Trash } from 'phosphor-react';
 
 export interface Tasks {
-    task: string | string[],
+    task?: string | string[],
 }
 
 
