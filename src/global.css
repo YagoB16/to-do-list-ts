@@ -9,8 +9,8 @@
   --gray-300: #808080;
   --gray-400: #333333;
   --gray-500: #262626;
-  --gray-600: #1A1A1A;
-  --gray-700: #0D0D0D;
+  --gray-600: #1a1a1a;
+  --gray-700: #0d0d0d;
 
   --purple: #8284fa;
   --purple-dark: #5e60ce;
@@ -39,10 +39,25 @@ button {
 }
 
 .text-inter-bold {
-    font-family: Inter, sans-serif;
-    font-weight: 700;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
 }
 .text-inter-regular {
-    font-family: Inter, sans-serif;
-    /* font-weight: 400; */
+  font-family: Inter, sans-serif;
+  /* font-weight: 400; */
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox'] ~ .checkMark {
+  display: flex;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+}
+
+input[type='checkbox']:checked ~ .checkMark {
+  background-color: green;
 }

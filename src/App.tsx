@@ -6,9 +6,8 @@ import { Tasks } from './components/Tasks'
 
 export function App() {
 
-    const [tasks, setTasks] = useState<string[]>([
-
-    ])
+    const [tasks, setTasks] = useState<string[]>([])
+    
     // Função para adicionar uma nova tarefa
     function handleCreateNewTask(newTask: string) {
         setTasks(prevTasks => [...prevTasks, newTask]);
